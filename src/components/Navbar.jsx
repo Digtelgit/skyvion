@@ -1,50 +1,89 @@
-import React, { useState } from 'react'
-import { close, logo, menu } from '../assets'
-import { navLinks } from '../constants'
+import React, { useState } from "react";
+import { close, menu } from "../assets";
+import { navLinks } from "../constants";
+import skyvionLogo from "/logo-removebg.png";
 
 const Navbar = () => {
-
-  const [toggle, setToggle] = useState(false)
+  const [toggle, setToggle] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(null);
 
   return (
-    <nav className='w-full flex py-6 justify-between items-center navbar'>
-      <img src={logo} alt='hoobank' className='w-[124px] h-[32px]'/>
-      <ul className='list-none sm:flex hidden justify-end items-center flex-1'>
-        {navLinks.map((nav, i) => (
-          <li 
-            key={nav.id}
-            className={`font-poppins font-normal cursor-pointer text-[16px] ${i === navLinks.length - 1 ? 'mr-0' : 'mr-10'} text-white mr-10`}
-          >
-            <a href={`#${nav.id}`}>
+    <nav className="w-full flex py-4 px-6 justify-between items-center  shadow-md">
+      {/* Logo */}
+      <img src={skyvionLogo} alt="Skyvion" className="w-[140px] h-[80px] object-contain" />
+
+      {/* Desktop Navigation */}
+      <ul className="hidden sm:flex space-x-8">
+        {navLinks.map((nav) => (
+          <li key={nav.id} className="relative group">
+            {/* Main Nav Item */}
+            <a
+              href={`#${nav.id}`}
+              className="text-lg font-semibold text-gray-800 hover:text-blue-600 transition duration-300"
+              onMouseEnter={() => setDropdownOpen(nav.id)}
+              onMouseLeave={() => setDropdownOpen(null)}
+            >
               {nav.title}
             </a>
-          </li>        
+
+            {/* Dropdown Menu */}
+            {nav.subMenu && dropdownOpen === nav.id && (
+              <ul className="absolute left-0 top-full w-48 bg-gray-100 text-gray-800 rounded-lg shadow-lg mt-2 p-2 z-50">
+                {nav.subMenu.map((subItem) => (
+                  <li key={subItem.id} className="p-2 hover:bg-gray-200 rounded">
+                    <a href={`#${subItem.id}`} className="block">
+                      {subItem.title}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </li>
         ))}
       </ul>
-      <div className='sm:hidden flex flex-1 justify-end items-center'>
+
+      {/* Mobile Menu Toggle */}
+      <div className="sm:hidden flex items-center">
         <img
           src={toggle ? close : menu}
-          alt='menu'
-          className='w-[28px] h-[28px] object-contain'
-          onClick={() => setToggle((previous) => !previous)}
+          alt="menu"
+          className="w-8 h-8 cursor-pointer"
+          onClick={() => setToggle((prev) => !prev)}
         />
-        <div className={`${toggle ? 'flex' : 'hidden'} p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}>
-          <ul className='list-none flex flex-col justify-end items-center flex-1'>
-            {navLinks.map((nav, i) => (
-              <li 
-                key={nav.id}
-                className={`font-poppins font-normal cursor-pointer text-[16px] ${i === navLinks.length - 1 ? 'mr-0' : 'mb-4'} text-white mr-10`}
-              >
-                <a href={`#${nav.id}`}>
+      </div>
+
+      {/* Mobile Navigation */}
+      {toggle && (
+        <div className="absolute top-16 right-4 bg-white text-gray-800 p-4 rounded-lg shadow-xl sm:hidden w-56">
+          <ul className="flex flex-col space-y-4">
+            {navLinks.map((nav) => (
+              <li key={nav.id}>
+                <a
+                  href={`#${nav.id}`}
+                  className="block text-lg font-semibold hover:text-blue-600 transition duration-300"
+                >
                   {nav.title}
                 </a>
-              </li>        
+
+                {/* Mobile Dropdown */}
+                {nav.subMenu && (
+                  <ul className="mt-2 pl-4 space-y-2">
+                    {nav.subMenu.map((subItem) => (
+                      <li key={subItem.id}>
+                        <a href={`#${subItem.id}`} className="text-gray-800 hover:text-blue-600">
+                          {subItem.title}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </li>
             ))}
           </ul>
         </div>
-      </div>
+      )}
     </nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

@@ -27,14 +27,15 @@ const Business = () => {
   return (
     <section id='features' className={layout.section}>
       <div className={layout.sectionInfo}>
-        <h2 className={styles.heading2}>You do the business, <br className='sm:block hidden'/>we'll handle the money.</h2>
-        <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-          With the right credit card, 
-          you can improve your financial life by building credit,
-          earning rewards and saving money.
-          But with hundreds of credit cards on the market.
+      <h2 className={`${styles.heading2} text-white`}>
+          Trusted & Competent Trading <br className="sm:block hidden" />
+          for Global Market Expansion
+        </h2>
+        <p className={`${styles.paragraph} max-w-[600px] mt-5 text-gray-300`}>
+          We are committed to progress and developing a trading company that ensures
+          the best satisfaction for customers and business partners through quality services and products.
         </p>
-        <Button styles='mt-10'/>
+        <Button styles="mt-10 bg-blue-500 hover:bg-blue-600 text-white" text="Explore More" />
       </div>
       <div className={`${layout.sectionImg} flex-col`}>
         {features.map((feature, index) => (

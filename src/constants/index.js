@@ -21,16 +21,25 @@ export const navLinks = [
     title: "Home",
   },
   {
-    id: "features",
-    title: "Features",
+    id: "aboutUs",
+    title: "About Us",
   },
   {
     id: "product",
-    title: "Product",
+    title: "Products",
+    subMenu: [
+      {id: "electronics", title: "Electronics"},
+      {id: "food", title: "Confectioneries & Food"},
+      {id: "consumerGoods", title: "Consumer Goods"},
+    ]
   },
   {
-    id: "clients",
-    title: "Clients",
+    id: "exportimport",
+    title: "Export & Import",
+  },
+  {
+    id: "contactUs",
+    title: "Contact Us",
   },
 ];
 
@@ -88,18 +97,18 @@ export const feedback = [
 export const stats = [
   {
     id: "stats-1",
-    title: "User Active",
-    value: "3800+",
+    title: "Employees",
+    value: "5,380+",
   },
   {
     id: "stats-2",
-    title: "Trusted by Company",
-    value: "230+",
+    title: "Global Offices",
+    value: "35+",
   },
   {
     id: "stats-3",
-    title: "Transaction",
-    value: "$230M+",
+    title: "Countries Present",
+    value: "12+",
   },
 ];
 
