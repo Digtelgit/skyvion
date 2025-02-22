@@ -47,23 +47,23 @@ export const features = [
   {
     id: "feature-1",
     icon: star,
-    title: "Rewards",
+    title: "Global Trade Network",
     content:
-      "The best credit cards offer some tantalizing combinations of promotions and prizes",
+      "we facilitate seamless import and export of high-quality goods across international markets, ensuring reliable supply chains",
   },
   {
     id: "feature-2",
     icon: shield,
-    title: "100% Secured",
+    title: "Trusted & Secure Transactions",
     content:
-      "We take proactive steps make sure your information and transactions are secure.",
+      "With a strong compliance framework, we gurantee secure and efficient trade operations for our global partners",
   },
   {
     id: "feature-3",
     icon: send,
     title: "Balance Transfer",
     content:
-      "A balance transfer credit card can save you a lot of money in interest charges.",
+      "From electronics to food products, we supply a vast range of quality consumer goods to meet global demand",
   },
 ];
 
