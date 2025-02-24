@@ -12,6 +12,7 @@ import {
   Testimonials 
 } from './components'
 import styles from './style'
+import CEOMessage from './components/CeoMessage'
 
 const App = () => {
   return (
@@ -32,8 +33,9 @@ const App = () => {
           <Business/>
           <Billing/>
           <CardDeal/>
-          <Testimonials/>
-          <Clients/>
+          {/* <Testimonials/>
+          <Clients/> */}
+          <CEOMessage />
           <CTA/>
           <Footer/>     
         </div>
