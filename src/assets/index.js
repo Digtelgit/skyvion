@@ -27,6 +27,8 @@ import people03 from "./people03.png";
 import value from "./coreValue.png";
 import aboutUs from "./aboutUs.png";
 import OurCeo from "./OurCeo.png";
+import contactUs from "./contactUs.png";
+import aboutUsComponentPage from './AboutUsComponent.png'
 
 export {
   airbnb,
@@ -57,5 +59,7 @@ export {
   exportPic,
   value,
   aboutUs,
-  OurCeo
+  OurCeo,
+  contactUs,
+  aboutUsComponentPage
 };
