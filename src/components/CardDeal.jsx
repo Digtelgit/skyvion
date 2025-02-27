@@ -3,8 +3,10 @@ import { aboutUs } from "../assets";
 import styles, { layout } from "../style";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { useNavigate } from "react-router-dom";
 
 const CardDeal = () => {
+  const navigate = useNavigate(); 
   // Content section animations
   const [contentRef, contentInView] = useInView({
     threshold: 0.25,
@@ -161,6 +163,7 @@ const CardDeal = () => {
             variants={buttonVariants}
             whileHover="hover"
             whileTap="tap"
+            onClick={() => navigate("/AboutUs")}
           >
             Learn More
           </motion.button>

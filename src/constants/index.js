@@ -114,69 +114,36 @@ export const stats = [
 
 export const footerLinks = [
   {
-    title: "Useful Links",
+    title: "Company",
     links: [
-      {
-        name: "Content",
-        link: "https://www.hoobank.com/content/",
-      },
-      {
-        name: "How it Works",
-        link: "https://www.hoobank.com/how-it-works/",
-      },
-      {
-        name: "Create",
-        link: "https://www.hoobank.com/create/",
-      },
-      {
-        name: "Explore",
-        link: "https://www.hoobank.com/explore/",
-      },
-      {
-        name: "Terms & Services",
-        link: "https://www.hoobank.com/terms-and-services/",
-      },
+      { name: "About Us", path: "/AboutUs" },
+      { name: "CEO Message", path: "/#ceo-message" },
+      
     ],
   },
   {
-    title: "Community",
+    title: "Services",
     links: [
-      {
-        name: "Help Center",
-        link: "https://www.hoobank.com/help-center/",
-      },
-      {
-        name: "Partners",
-        link: "https://www.hoobank.com/partners/",
-      },
-      {
-        name: "Suggestions",
-        link: "https://www.hoobank.com/suggestions/",
-      },
-      {
-        name: "Blog",
-        link: "https://www.hoobank.com/blog/",
-      },
-      {
-        name: "Newsletters",
-        link: "https://www.hoobank.com/newsletters/",
-      },
+      { name: "Product Supply", path: "/product" },
+      { name: "Export & Import", path: "/exportimport" },
     ],
   },
   {
-    title: "Partner",
+    title: "Support",
     links: [
-      {
-        name: "Our Partner",
-        link: "https://www.hoobank.com/our-partner/",
-      },
-      {
-        name: "Become a Partner",
-        link: "https://www.hoobank.com/become-a-partner/",
-      },
+      { name: "Contact Us", path: "/contact-us" },
+      
+    ],
+  },
+  {
+    title: "Social",
+    links: [
+      { name: "LinkedIn", path: "https://linkedin.com/company/skyvion" },
+      { name: "Instagram", path: "https://instagram.com/skyvion" },
     ],
   },
 ];
+
 
 export const socialMedia = [
   {

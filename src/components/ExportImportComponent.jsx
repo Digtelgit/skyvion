@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 const ExportImport = () => {
+  const navigate = useNavigate(); 
   // Refined color palette based on client request
   const colors = {
     navy: "#0A2463", // Deep blue - primary brand color
@@ -272,6 +274,7 @@ const ExportImport = () => {
                   backgroundColor: colors.gold,
                   color: colors.navy
                 }}
+                onClick={() => navigate("/contact-us")}
               >
                 Request Consultation
               </button>

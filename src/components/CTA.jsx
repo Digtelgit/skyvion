@@ -3,8 +3,10 @@ import styles from "../style";
 import Button from "./Button";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { useNavigate } from "react-router-dom";
 
 const CTA = () => {
+  const navigate = useNavigate(); 
   // Setup for viewport detection and animations
   const [ctaRef, inView] = useInView({
     threshold: 0.2,
@@ -131,6 +133,7 @@ const CTA = () => {
           variants={buttonVariants}
           whileHover="hover"
           whileTap="tap"
+          onClick={() => navigate("/contact-us")}
         >
           Get Started
         </motion.button>

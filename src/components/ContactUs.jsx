@@ -57,15 +57,14 @@ const ContactUs = () => {
             {/* Email */}
             <div className="flex items-center space-x-4">
               <Mail className="text-[#FFD700] w-6 h-6" />
-              <span className="text-gray-300 text-lg">info@sunmnc.com</span>
+              <span className="text-gray-300 text-lg"> info@sky-vion.com</span>
             </div>
 
             {/* Address */}
             <div className="flex items-center space-x-4">
               <MapPin className="text-[#FFD700] w-6 h-6" />
               <span className="text-gray-300 text-lg">
-                SUITE # 2507 2508, One Lake Plaza, Cluster T, Jumeirah Lakes
-                Towers, Dubai, UAE.
+                Suite NO. 1602, Al Owais Business Tower, Sabka Deira, Dubai, UAE
               </span>
             </div>
           </div>
@@ -81,7 +80,7 @@ const ContactUs = () => {
       >
         <iframe
           className="w-full h-96 rounded-lg"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.6712608013804!2d55.147846875378015!3d25.07912897778705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6ca7bc175cd9%3A0xe8c6b0451c7536f3!2sOne%20Lake%20Plaza%20-%20JLT%20Exit%20-%20Jumeirah%20Lake%20Towers%20-%20Dubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sin!4v1740473701470!5m2!1sen!2sin"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3608.067792745087!2d55.30040527509318!3d25.268304828817367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f4347d9cf3a67%3A0x9c4f592bce9f8403!2sAl%20Owais%20Business%20Tower!5e0!3m2!1sen!2sin!4v1740637536041!5m2!1sen!2sin"
           allowFullScreen=""
           loading="lazy"
         ></iframe>
