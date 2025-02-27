@@ -12,7 +12,7 @@ const Footer = () => {
           <img
             src={skyvionLogo}
             alt="logo"
-            className="w-[266px] h-[172px] object-contain"
+            className="w-[266px] h-[172px] object-contain brightness-200 contrast-200"
           />
           <p className={`${styles.paragraph} mt-4 max-w-[310px]`}>
             Your trusted partner in wholesale and retail supply, delivering

@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <nav className="w-full flex py-4 px-6 justify-between items-center bg-[#0B0D17] shadow-md">
     {/* Logo */}
-    <img src={skyvionLogo} alt="Skyvion" className="w-[140px] h-[80px] object-contain" />
+    <img src={skyvionLogo} alt="Skyvion" className="w-[140px] h-[80px] object-contain brightness-200 contrast-200" />
   
     {/* Desktop Navigation */}
     <ul className="hidden sm:flex space-x-8">
