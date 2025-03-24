@@ -51,8 +51,13 @@ const ContactUs = () => {
             {/* Phone */}
             <div className="flex items-center space-x-4">
               <Phone className="text-[#FFD700] w-6 h-6" />
-              <span className="text-gray-300 text-lg">+971 4 4474 669</span>
+              <span className="text-gray-300 text-lg"> +971 4 272 8544</span>
             </div>
+
+            {/* <div className="flex items-center space-x-4">
+            <Phone className="text-[#FFD700] w-6 h-6" />
+            <span className="text-gray-300 text-lg">+971 4 272 8544</span>
+            </div> */}
 
             {/* Email */}
             <div className="flex items-center space-x-4">
